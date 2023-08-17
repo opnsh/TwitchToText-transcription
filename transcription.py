@@ -31,9 +31,6 @@ def seg():
             segments = transcribe_audio(audio_file)
             
             if segments:
-                with open(output_transcript_file, "r") as f:
-                    existing_transcript = f.read()
-                
                 with open(output_transcript_file, "a") as f:
                     for segment in segments:
                         f.write(f"\n{segment.text}")
