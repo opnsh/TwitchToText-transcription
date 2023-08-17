@@ -14,7 +14,10 @@ or manually install each of these modules:
 ```
 pip install colorama
 pip install faster_whisper
-pip install streamlink
+```
+And install streamlink according to your system (the doc is here: https://streamlink.github.io/install.html), for example if you're based on debian:
+```
+sudo apt install streamlink
 ```
 3. Make sure you have the `faster_whisper` transcription template correctly installed and configured.
 4. Run the `main.py` file to launch the audio stream capture and transcription script.

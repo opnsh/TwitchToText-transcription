@@ -1,3 +1,2 @@
 colorama
 faster_whisper
-streamlink
