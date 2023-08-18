@@ -1,7 +1,7 @@
 TwitchToText - transcription
 ====================================
 
-TwitchToText is a tool that allows you to transcribe a Twitch live stream. It uses the `faster_whisper` transcription template for audio-to-text conversion. Make sure you have installed the modules listed in the `requirements.txt` file before running the script.
+TwitchToText is a tool that allows you to transcribe a Twitch live stream. It uses the `faster_whisper` transcription template for audio-to-text conversion. Make sure you have installed the modules listed in the `requirements.txt` file and install streamlink before running the script.
 
 Installation instructions :
 -----------------------------
