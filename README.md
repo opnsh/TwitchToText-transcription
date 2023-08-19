@@ -26,9 +26,11 @@ Usage:
 -------------
 1. Run the `main.py` script.
 2. Follow the instructions to provide the URL of the streaming audio stream you wish to transcribe.
-3. Choose the time interval between audio segment captures (can be ignored).
-4. The transcription results will be saved in the `transcript.txt` file.
-5. Stop the script by pressing Ctrl+C.
+3. Choose the time interval between audio segment captures (can be ignored),
+the longer the time interval, the better the quality and fidelity of the transcription, but the greater the performance required.
+5. The transcription results will be saved in the `transcript.txt` file.
+6. The program waits for at least two time intervals to be captured before starting transcription, so don't worry if the result doesn't appear immediately in the file - it may take several minutes.
+7. Stop the script by pressing Ctrl+C.
 
 Author:
 --------
