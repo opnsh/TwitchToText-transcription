@@ -7,7 +7,7 @@ model_size = "medium" # You can choose between tiny, base, small, medium and lar
 output_transcript_file = "transcript.txt"
 audio_file_pattern = "audio_output_file_*.flac"
 
-model = WhisperModel(model_size, device="cpu", compute_type="int8")
+model = WhisperModel(model_size, device="cpu", compute_type="int8") # For a faster transcription, if you have a gpu you can modify this line 
 
 def transcribe_audio(audio_file):
     segments, _ = model.transcribe(audio_file, beam_size=5)
