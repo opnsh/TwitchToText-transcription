@@ -17,7 +17,7 @@ def capture():
 
     while True:
         audio_output_file = f"{output_base}_{slice_index}.{output_format}"
-        streamlink_cmd = f"streamlink -o {audio_output_file} --twitch-disable-ads {twitch_url} audio_only"
+        streamlink_cmd = f"streamlink -o {audio_output_file} --twitch-disable-ads {twitch_url} audio_only" # The "--twitch-disable-ads" option can result in a loss of 15 seconds of transcription time at the beginning of each sequence. You can solve this problem by using twitch turbo or by configuring long sequences.
         subprocess.Popen(streamlink_cmd, shell=True)
 
         time.sleep(sleep_time)
