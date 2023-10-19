@@ -40,9 +40,9 @@ if __name__ == "__main__":
         print("URL cannot be empty. Please enter a valid URL.")
 
     while True:
-        sleep_time = input("Enter time intervals (default is 30 seconds): ")
+        sleep_time = input("Enter time intervals (default is 60 seconds): ")
         if sleep_time.strip() == "":
-            sleep_time = 48
+            sleep_time = 78
             break
         try:
             sleep_time = int(sleep_time)
